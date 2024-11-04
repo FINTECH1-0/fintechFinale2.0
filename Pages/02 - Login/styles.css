@@ -1,0 +1,87 @@
+/* Estilos Globais */
+body {
+    margin: 0;
+    font-family: 'Arimo', sans-serif;
+}
+
+.bg-dark{
+    background: linear-gradient(180deg, white 0%, #11C76F  44%, #11C76F 100%);
+}
+
+/* Background Gradient */
+.container-fluid {
+    height: 100vh;
+}
+
+/* Imagem Principal */
+.main-image {
+    max-width: 80%;
+    height: auto;
+}
+
+/* Seção de Login */
+.login-section {
+    max-width: 400px;
+    width: 100%;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+.login-logo {
+    max-width: 100%;
+}
+
+.login-title {
+    color: #11C76F;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.login-form {
+    width: 100%;
+}
+
+.login-actions .btn-primary {
+    width: 100%;
+}
+
+.lgatt {
+    background-color: #11C76F;
+}
+
+.rgatt {
+    color: #11C76F;
+}
+
+.forgot-password{
+    color: #11C76F;
+}
+/* Para tablets e telas menores */
+@media (max-width: 1024px) {
+    
+    .login-section {
+        max-width: 80%;
+    }
+
+    .login-title {
+        font-size: 28px;
+    }
+}
+
+/* Para telas de celular */
+@media (max-width: 768px) {
+    .main-image {
+        width: 70%;
+    }
+
+
+    .login-section {
+        max-width: 95%;
+    }
+
+    .login-title {
+        font-size: 24px;
+    }
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Dashboard.css">
+    <title>FinManager - Dashboard</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <img src="/Pages/03 - Dashboard/Imagens Dashboard/icone-logo-cabeça.svg" alt="FinManager Logo">
+        </div>
+        <div class="user-info">
+            <img src="/Pages/03 - Dashboard/Imagens Dashboard/FinRock.png" alt="Foto de perfil">
+            <h3>Finn Rock</h3>
+            <p>finnrock@gmail.com</p>
+        </div>
+        <nav class="menu">
+            <a href="/Pages/03 - Dashboard/Dashboard.html" class="active"><img src="/Pages/03 - Dashboard/Imagens Dashboard/icone-dashboard.svg" alt="Dashboard"></a>
+            <a href="/Pages/04 - Transactions/Transactions.html"><img src="/Pages/03 - Dashboard/Imagens Dashboard/icone-transacao.svg" alt="Transações"></a>
+            <a href="/Pages/05 - Configuration/Configuration.html"><img src="/Pages/03 - Dashboard/Imagens Dashboard/icone-configuracao.svg" alt="Configurações"></a>
+        </nav>
+        <a href="/Pages/02 - Login/index.html" class="logout"><img src="/Pages/03 - Dashboard/Imagens Dashboard/icone-logout.svg" alt="Logout"></a>
+    </div>
+
+    <div class="content">
+        <header class="header">
+            <h2>Bom dia, Finn</h2>
+            <p>Bem-vindo de volta, é bom ter você aqui!</p>
+        </header>
+
+        <div class="dashboard">
+            <div class="card-image">
+                <img src="/Pages/03 - Dashboard/Imagens Dashboard/cartão.png" alt="Cartão">
+            </div>
+            <div class="health-image">
+                <img src="/Pages/03 - Dashboard/Imagens Dashboard/gráfico-financeiro.png" alt="Saúde Financeira">
+            </div>
+            <div class="wallet-image">
+                <img src="/Pages/03 - Dashboard/Imagens Dashboard/carteira.png" alt="Carteira">
+            </div>
+        </div>
+
+        <div class="transactions">
+            <h3>Transações Recentes</h3>
+            <div class="transaction-table">
+                <div class="transaction-row">
+                    <span>Shopping</span>
+                    <span>01 Nov, 2024</span>
+                    <span>R$260,00</span>
+                    <span>Cartão de Crédito</span>
+                    <span><button class="edit-button">✏️</button><button class="delete-button">🗑️</button></span>
+                </div>
+                <div class="transaction-row">
+                    <span>Academia</span>
+                    <span>01 Nov, 2024</span>
+                    <span>R$100,00</span>
+                    <span>Cartão de Crédito</span>
+                    <span><button class="edit-button">✏️</button><button class="delete-button">🗑️</button></span>
+                </div>
+                <div class="transaction-row">
+                    <span>Supermercado</span>
+                    <span>01 Nov, 2024</span>
+                    <span>R$200,00</span>
+                    <span>Cartão de Crédito</span>
+                    <span><button class="edit-button">✏️</button><button class="delete-button">🗑️</button></span>
+                </div>
+                <div class="transaction-row">
+                    <span>Aluguel</span>
+                    <span>01 Nov, 2024</span>
+                    <span>R$400,00</span>
+                    <span>Cartão de Crédito</span>
+                    <span><button class="edit-button">✏️</button><button class="delete-button">🗑️</button></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

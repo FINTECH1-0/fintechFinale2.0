@@ -14,8 +14,8 @@ body {
 
 /* Sidebar */
 .sidebar {
-    width: 200px;
-    background-color: #11C76F;
+    width: 250px;
+    background-color: #11C76F; /* Cor da sidebar */
     color: white;
     display: flex;
     flex-direction: column;
@@ -25,43 +25,57 @@ body {
 
 .logo img {
     width: 100%;
-    margin-top: 20px;
-    margin-bottom: 70px;
-    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.user-info {
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 .user-info img {
     border-radius: 50%;
     width: 80px;
     height: 80px;
-    margin-left: 20px;
 }
 
-.user-info h3{
-    margin-top: 10px;
-    text-align: center;
-}
-.user-info p {
-    margin-top: 10px;
-    text-align: center;
-    font-size: small;
+.sidebar-menu {
+    width: 100%;
 }
 
-.menu a {
-    margin: 35px;
-    display: block;
+.menu-item {
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    width: 100%;
 }
 
-.menu a img {
-    width: 100px;
-    height: 30px;
+.menu-item.selected {
+    background-color: #0F9A55; /* Cor quando selecionado */
+}
+
+.menu-item:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Cor ao passar o mouse */
+}
+
+.menu-text {
+    margin-left: 10px;
+    color: white;
+    text-decoration: none; /* Remove sublinhado */
+}
+
+/* Logout */
+.logout {
+    margin-top:140%; /* Empurra o logout para o final da sidebar */
+    padding: 10px;
+    display: flex;
+    justify-content: center;
 }
 
 .logout img {
-    width: 90px;
-    height: 20px;
-    margin-top: 350%;
-    padding-bottom: 30;
+    width: 12vh; /* Ajuste conforme necessário */
 }
 
 /* Content principal */
@@ -88,7 +102,6 @@ body {
 }
 
 /* Botões */
-.new-profile,
 .logout-button {
     background-color: #11C76F;
     color: white;

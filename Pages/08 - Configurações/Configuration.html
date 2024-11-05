@@ -11,25 +11,40 @@
 <body>
     <div class="sidebar">
         <div class="logo">
-            <img src="/Pages/05 - Configuration/Imagens Configuration/icone-logo-cabeça.svg" alt="FinManager Logo">
+            <img src="/Assets/Images/icone-logo-cabeça.svg" alt="FinManager Logo">
         </div>
         <div class="user-info">
-            <img src="/pages/05 - Configuration/Imagens Configuration/FinRock.png" alt="Foto de perfil">
+            <img src="/Assets/Images/FinRock.png" alt="Foto de perfil">
             <h3>Finn Rock</h3>
             <p>finnrock@gmail.com</p>
         </div>
-        <nav class="menu">
-            <a href="/Pages/03 - Dashboard/Dashboard.html"><img src="/Pages/05 - Configuration/Imagens Configuration/icone-dashboard.svg" alt="Dashboard"></a>
-            <a href="/Pages/04 - Transactions/Transactions.html"><img src="/Pages/05 - Configuration/Imagens Configuration/icone-transacao.svg" alt="Transações"></a>
-            <a href="/Pages/05 - Configuration/Configuration.html"><img src="/Pages/05 - Configuration/Imagens Configuration/icone-configuracao.svg" alt="Configurações"></a>
-        </nav>
-        <a href="/Pages/02 - Login/index.html" class="logout"><img src="/Pages/05 - Configuration/Imagens Configuration/icone-logout.svg" alt="Logout"></a>
+        <div class="sidebar-menu">
+            <div class="menu-item">
+                <a href="/Pages/03 - Dashboard/Dashboard.html" class="menu-text">Dashboard</a>
+            </div>
+            <div class="menu-item">
+                <a href="/Pages/06 - Divida/Divida.html" class="menu-text">Divida</a>
+            </div>
+            <div class="menu-item">
+                <a href="/Pages/07 - Investimento/Investimento.html" class="menu-text">Investimento</a>
+            </div>
+            <div class="menu-item">
+                <a href="/Pages/04 - Meta Financeira/Meta.html" class="menu-text">Meta Financeira</a>
+            </div>
+            <div class="menu-item">
+                <a href="/Pages/05 - Transações/Transactions.html" class="menu-text">Transações</a>
+            </div>
+            <div class="menu-item selected">
+                <a href="/Pages/08 - Configurações/Configuration.html" class="menu-text">Configurações</a>
+            </div>
+            <a href="/Pages/02 - Login/index.html" class="logout">
+                <img src="/Assets/Images/icone-logout.svg" alt="Logout">
+            </a>
+        </div>
     </div>
-
     <div class="content">
         <header class="header">
             <h2 class="title">Configurações</h2>
-            <button class="new-profile">+ Novo Perfil</button>
             <button class="logout-button" onclick="window.location.href='/Pages/02 - Login/index.html'">Sair</button>
         </header>
 
@@ -45,7 +60,6 @@
             <h3>Outras Configurações</h3>
             <ul class="settings-list">
                 <li>Gerenciar Conta</li>
-                <li>Sincronização</li>
                 <li>Senhas</li>
                 <li>Idiomas</li>
             </ul>

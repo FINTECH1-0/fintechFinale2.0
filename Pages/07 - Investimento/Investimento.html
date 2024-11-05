@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Investimento.css">
+    <title>FinManager - Investimento</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <img src="/Assets/Images/icone-logo-cabeça.svg" alt="FinManager Logo">
+        </div>
+        <div class="user-info">
+            <img src="/Assets/Images/FinRock.png" alt="Foto de perfil">
+            <h3>Finn Rock</h3>
+            <p>finnrock@gmail.com</p>
+        </div>
+        <div class="sidebar-menu">
+            <div class="menu-item">
+                <a href="/Pages/03 - Dashboard/Dashboard.html" class="menu-text">Dashboard</a>
+            </div>
+            <div class="menu-item">
+                <a href="/Pages/06 - Divida/Divida.html" class="menu-text">Divida</a>
+            </div>
+            <div class="menu-item selected">
+                <a href="/Pages/07 - Investimento/Investimento.html" class="menu-text">Investimento</a>
+            </div>
+            <div class="menu-item">
+                <a href="/Pages/04 - Meta Financeira/Meta.html" class="menu-text">Meta Financeira</a>
+            </div>
+            <div class="menu-item">
+                <a href="/Pages/05 - Transações/Transactions.html" class="menu-text">Transações</a>
+            </div>
+            <div class="menu-item">
+                <a href="/Pages/08 - Configurações/Configuration.html" class="menu-text">Configurações</a>
+            </div>
+            <a href="/Pages/02 - Login/index.html" class="logout">
+                <img src="/Assets/Images/icone-logout.svg" alt="Logout">
+            </a>
+        </div>
+    </div>
+
+    <div class="content">
+        <header class="header">
+            <h2>Dívida</h2>
+            <div class="actions">
+                <button class="new-transaction">Add Investimento</button>
+                <input type="search" placeholder="Buscar" class="search-input">
+            </div>
+        </header>
+
+        <div class="transaction-table">
+            <div class="transaction-row transaction-row-header">
+                <span>Descrição</span>
+                <span>Data</span>
+                <span>Valor</span>
+                <span>Ação</span>
+            </div>
+
+            <!-- Exemplo de linha de transação -->
+            <div class="transaction-row">
+                <span>Bitcoin</span>
+                <span>03 Nov, 2024</span>
+                <span>R$1.000,00</span>
+                <span>
+                    <button class="add-button">➕</button>
+                    <button class="delete-button">❌</button>
+                </span>
+            </div>
+            <div class="transaction-row">
+                <span>PETR4</span>
+                <span>03 Nov, 2024</span>
+                <span>R$5.000,00</span>
+                <span>
+                    <button class="add-button">➕</button>
+                    <button class="delete-button">❌</button>
+                </span>
+            </div>
+            <div class="transaction-row">
+                <span>Magalu</span>
+                <span>03 Nov, 2024</span>
+                <span>R$2.000,00</span>
+                <span>
+                    <button class="add-button">➕</button>
+                    <button class="delete-button">❌</button>
+                </span>
+            </div>
+            <!-- Adicione mais linhas conforme necessário -->
+        </div>
+</body>
+</html>

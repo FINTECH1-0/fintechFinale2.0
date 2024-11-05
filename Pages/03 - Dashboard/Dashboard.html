@@ -9,19 +9,36 @@
 <body>
     <div class="sidebar">
         <div class="logo">
-            <img src="/Pages/03 - Dashboard/Imagens Dashboard/icone-logo-cabeça.svg" alt="FinManager Logo">
+            <img src="/Assets/Images/icone-logo-cabeça.svg" alt="FinManager Logo">
         </div>
         <div class="user-info">
-            <img src="/Pages/03 - Dashboard/Imagens Dashboard/FinRock.png" alt="Foto de perfil">
+            <img src="/Assets/Images/FinRock.png" alt="Foto de perfil">
             <h3>Finn Rock</h3>
             <p>finnrock@gmail.com</p>
         </div>
-        <nav class="menu">
-            <a href="/Pages/03 - Dashboard/Dashboard.html" class="active"><img src="/Pages/03 - Dashboard/Imagens Dashboard/icone-dashboard.svg" alt="Dashboard"></a>
-            <a href="/Pages/04 - Transactions/Transactions.html"><img src="/Pages/03 - Dashboard/Imagens Dashboard/icone-transacao.svg" alt="Transações"></a>
-            <a href="/Pages/05 - Configuration/Configuration.html"><img src="/Pages/03 - Dashboard/Imagens Dashboard/icone-configuracao.svg" alt="Configurações"></a>
-        </nav>
-        <a href="/Pages/02 - Login/index.html" class="logout"><img src="/Pages/03 - Dashboard/Imagens Dashboard/icone-logout.svg" alt="Logout"></a>
+        <div class="sidebar-menu">
+            <div class="menu-item selected">
+                <a href="/Pages/03 - Dashboard/Dashboard.html" class="menu-text">Dashboard</a>
+            </div>
+            <div class="menu-item">
+                <a href="/Pages/06 - Divida/Divida.html" class="menu-text">Divida</a>
+            </div>
+            <div class="menu-item">
+                <a href="/Pages/07 - Investimento/Investimento.html" class="menu-text">Investimento</a>
+            </div>
+            <div class="menu-item">
+                <a href="/Pages/04 - Meta Financeira/Meta.html" class="menu-text">Meta Financeira</a>
+            </div>
+            <div class="menu-item">
+                <a href="/Pages/05 - Transações/Transactions.html" class="menu-text">Transações</a>
+            </div>
+            <div class="menu-item">
+                <a href="/Pages/08 - Configurações/Configuration.html" class="menu-text">Configurações</a>
+            </div>
+            <a href="/Pages/02 - Login/index.html" class="logout">
+                <img src="/Assets/Images/icone-logout.svg" alt="Logout">
+            </a>
+        </div>
     </div>
 
     <div class="content">
@@ -32,18 +49,31 @@
 
         <div class="dashboard">
             <div class="card-image">
-                <img src="/Pages/03 - Dashboard/Imagens Dashboard/cartão.png" alt="Cartão">
+            <a href="/Pages/05 - Transações/Transactions.html" class="Transações">
+                <img src="/Assets/Images/cartão.png" alt="Cartão">
+            </a>
             </div>
             <div class="health-image">
-                <img src="/Pages/03 - Dashboard/Imagens Dashboard/gráfico-financeiro.png" alt="Saúde Financeira">
+            <a href="/Pages/04 - Meta Financeira/Meta.html" class="Meta">
+                <img src="/Assets/Images/Meta FInanceira.png" alt="Meta Financeira">
+            </a>
             </div>
             <div class="wallet-image">
-                <img src="/Pages/03 - Dashboard/Imagens Dashboard/carteira.png" alt="Carteira">
+            <a href="/Pages/07 - Investimento/Investimento.html" class="Investimento">
+                <img src="/Assets/Images/carteira.png" alt="Carteira">
+            </a>
             </div>
         </div>
 
         <div class="transactions">
             <h3>Transações Recentes</h3>
+            <div class="transaction-row-1">
+                <span>Descrição</span>
+                <span>Data</span>
+                <span>Valor</span>
+                <span>Pagamento</span>
+                <span>Ação</span>
+            </div>
             <div class="transaction-table">
                 <div class="transaction-row">
                     <span>Shopping</span>
